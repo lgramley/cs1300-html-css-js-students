@@ -15,7 +15,7 @@ const apiRequest = async () => {
     }
   });
 
-  // console.log(response);
+  console.log(response);
 
   // Return the response in JSON format
   return response.json();
@@ -31,9 +31,34 @@ const updatePage = async () => {
   // TODO: Use either `map` and/or `filter` to extract some data from the array of fruit objects
   // For example, find "name of all fruits whose sugar > 15",
 
+  const filteredArray = fruitsArray.filter((item) => {
+    return item.nutritions.sugar > 15 // how to get just sugar or just name
+
+  })
+
+  //map to go from obj to str
+  const keyArray = filteredArray.map((item) => {
+    return item.name
+
+  })
+
+
+
+
   // TODO: Create a new HTML element to display your data
 
-  // TODO: Append your new element to the page
+  const addFruit = (list) => {
+    const newElement = document.createElement('div');
+    newElement.innerHTML = list;
+
+
+    // TODO: Append your new element to the page
+
+    const existingElement = document.getElementById('cs1300-gallery');
+    existingElement.append(newElement);
+  }
+  addFruit(keyArray)
+
 
 }
 

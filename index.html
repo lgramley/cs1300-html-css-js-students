@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>WebDev Studio</title>
-    <!-- import javascript variables and functions -->
-    <script src="app.js" defer></script>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
+<head>
+  <title>WebDev Studio</title>
+  <!-- import javascript variables and functions -->
+  <script src="app.js" defer></script>
+  <!-- import CSS styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
-      <div class="gallery-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
-      </div>
+<!-- page content goes into <body> -->
 
-      <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
-      <!-- <button onclick="updatePage()">Press this button to display some fruit data</button> -->
+<body>
+  <div id="cs1300-gallery">
+    <h1>Welcome to my bakery</h1>
+    <p>Add your own images and styles!</p>
+
+    <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
+    <div class="gallery-container">
+      <img class="gallery-item" src="https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg"
+        alt="cupcake">
+      <img class="gallery-item"
+        src="https://handletheheat.com/wp-content/uploads/2017/05/how-to-make-scones-SQUARE-1.jpg" alt="scone">
+      <img class="gallery-item"
+        src="https://thebusybaker.ca/wp-content/uploads/2020/07/blueberry-muffins-fb-ig-7-scaled.jpg" alt="muffin">
+      <img class="gallery-item"
+        src="https://celebratingsweets.com/wp-content/uploads/2018/12/Homemade-Hot-Chocolate-4.jpg" alt="hot chocolate">
+      <img class="gallery-item"
+        src="https://upload.wikimedia.org/wikipedia/commons/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg"
+        alt="ice cream">
+      <img class="gallery-item"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/800px-Pound_layer_cake.jpg"
+        alt="cake">
     </div>
-  </body>
+
+    <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
+    <button onclick="updatePage()">Press this button to display some fruit data</button>
+  </div>
+</body>
 
 </html>
